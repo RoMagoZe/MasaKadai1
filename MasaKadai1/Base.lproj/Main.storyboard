@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MasaKadai1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-2e-d2e" userLabel="Number Input Text Filed1">
+                                <rect key="frame" x="25" y="50" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="WaR-Nk-70N"/>
+                                    <constraint firstAttribute="height" constant="40" id="rep-M8-kmu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aXI-9J-M14" userLabel="Number Input Text Filed2">
+                                <rect key="frame" x="25" y="110" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2fT-1r-Z3p"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="e8T-6V-9g0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="mRk-Hn-Sn7"/>
+                                    <constraint firstAttribute="width" constant="110" id="ofp-Yh-93d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hg2-UY-VzB" userLabel="Number Input Text Filed3">
+                                <rect key="frame" x="25" y="170" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="3Jd-p9-WWP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="7Gf-XC-DI9"/>
+                                    <constraint firstAttribute="width" constant="110" id="KMF-l6-FCC"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="Npi-Ie-Oz2"/>
+                                    <constraint firstAttribute="height" constant="40" id="hS0-Wr-pcI"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="110" id="z10-EU-fHm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-XW-qJc">
+                                <rect key="frame" x="25" y="230" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Kn-5V-nPx"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="110" id="Heh-cD-bZY"/>
+                                    <constraint firstAttribute="width" constant="110" id="J4k-2u-ZxJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="VK8-8R-cf1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="Vtz-9a-yG2"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="XAf-Lr-hzB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-Ga-p66">
+                                <rect key="frame" x="25" y="290" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="110" id="48I-nw-T4X"/>
+                                    <constraint firstAttribute="width" constant="110" id="OqO-5B-TtO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="UiR-gX-U6C"/>
+                                    <constraint firstAttribute="height" constant="40" id="eWI-Mq-ubA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="j6X-Yx-Mxz"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="m4p-Q6-DL4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-Q5-gcE">
+                                <rect key="frame" x="45" y="365" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Tyj-B0-hkf"/>
+                                    <constraint firstAttribute="height" constant="35" id="iqL-9d-xCc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="inputButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fx-B6-Efa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSq-cO-ext">
+                                <rect key="frame" x="45" y="430" width="70" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EGy-h6-Ws3"/>
+                                    <constraint firstAttribute="width" constant="70" id="Uyh-sW-HnM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OQI-XW-qJc" firstAttribute="top" secondItem="hg2-UY-VzB" secondAttribute="bottom" constant="20" id="1tE-wm-CcD"/>
+                            <constraint firstItem="OQI-XW-qJc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="688-Nw-I69"/>
+                            <constraint firstItem="hg2-UY-VzB" firstAttribute="top" secondItem="aXI-9J-M14" secondAttribute="bottom" constant="20" id="6W4-SY-uhk"/>
+                            <constraint firstItem="OBZ-Ga-p66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="7Aa-aO-PQZ"/>
+                            <constraint firstItem="Rlt-Q5-gcE" firstAttribute="top" secondItem="OBZ-Ga-p66" secondAttribute="bottom" constant="35" id="LCN-eZ-Ijl"/>
+                            <constraint firstItem="eIc-2e-d2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="LEM-2P-w7f"/>
+                            <constraint firstItem="aXI-9J-M14" firstAttribute="top" secondItem="eIc-2e-d2e" secondAttribute="bottom" constant="20" id="LJ1-1k-dog"/>
+                            <constraint firstItem="Rlt-Q5-gcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="N0X-Ic-ciE"/>
+                            <constraint firstItem="eIc-2e-d2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ph8-vZ-4Wy"/>
+                            <constraint firstItem="OBZ-Ga-p66" firstAttribute="top" secondItem="OQI-XW-qJc" secondAttribute="bottom" constant="20" id="RAL-sV-ham"/>
+                            <constraint firstItem="rSq-cO-ext" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="exy-MW-y8D"/>
+                            <constraint firstItem="aXI-9J-M14" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="oyu-Zw-FU5"/>
+                            <constraint firstItem="hg2-UY-VzB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="vej-BB-Qci"/>
+                            <constraint firstItem="rSq-cO-ext" firstAttribute="top" secondItem="Rlt-Q5-gcE" secondAttribute="bottom" constant="30" id="xoZ-8C-uoW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberInputTextFiled1" destination="eIc-2e-d2e" id="vHd-av-5am"/>
+                        <outlet property="numberInputTextFiled2" destination="aXI-9J-M14" id="jSh-eo-qbi"/>
+                        <outlet property="numberInputTextFiled3" destination="hg2-UY-VzB" id="gg2-SA-rsx"/>
+                        <outlet property="numberInputTextFiled4" destination="OQI-XW-qJc" id="Zto-WM-WrQ"/>
+                        <outlet property="numberInputTextFiled5" destination="OBZ-Ga-p66" id="KAH-yO-0Jn"/>
+                        <outlet property="numberShowLabel" destination="rSq-cO-ext" id="Jey-oS-1JO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
