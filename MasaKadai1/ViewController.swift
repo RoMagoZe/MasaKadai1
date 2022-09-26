@@ -9,17 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var numberInputTextFiled1: UITextField!
-    @IBOutlet weak var numberInputTextFiled2: UITextField!
-    @IBOutlet weak var numberInputTextFiled3: UITextField!
-    @IBOutlet weak var numberInputTextFiled4: UITextField!
-    @IBOutlet weak var numberInputTextFiled5: UITextField!
-    @IBOutlet weak var numberShowLabel: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet private weak var numberInputTextFiled1: UITextField!
+    @IBOutlet private weak var numberInputTextFiled2: UITextField!
+    @IBOutlet private weak var numberInputTextFiled3: UITextField!
+    @IBOutlet private weak var numberInputTextFiled4: UITextField!
+    @IBOutlet private weak var numberInputTextFiled5: UITextField!
+    @IBOutlet private weak var numberShowLabel: UILabel!
 
     @IBAction func inputButton(_ sender: Any) {
         var numberInput1 = Int(numberInputTextFiled1.text ?? "") ?? 0
